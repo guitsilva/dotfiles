@@ -3,7 +3,7 @@
       create: true
       relink: true
 
-- clean: ['~']
+- clean: ['~', '~/.config', '~/.antigen']
 
 - link:
     ~/.antigen/antigen: antigen
