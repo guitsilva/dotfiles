@@ -6,3 +6,6 @@
 	path = antigen
 	url = https://github.com/zsh-users/antigen
 	ignore = dirty
+[submodule "fzf"]
+	path = fzf
+	url = https://github.com/junegunn/fzf
