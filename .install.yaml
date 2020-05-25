@@ -8,10 +8,12 @@
 - link:
     ~/.antigen/antigen: antigen
     ~/.antigenrc:
+    ~/.fzf:
     ~/.gitconfig:
-    ~/.zshrc:
     ~/.gpg.conf:
     ~/.hidden:
+    ~/.zshrc:
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
+    - [./fzf/install --no-bash --no-fish --key-bindings --completion --no-update-rc, Installing FZF]
