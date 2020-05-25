@@ -5,7 +5,10 @@
 
 - clean: ['~']
 
-- link: {}
+- link:
+    ~/.antigen/antigen: antigen
+    ~/.antigenrc:
+    ~/.zshrc:
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]

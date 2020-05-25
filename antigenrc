@@ -1,0 +1,23 @@
+# Load oh-my-zsh library
+antigen use oh-my-zsh
+
+# Load bundles from oh-my-zsh
+antigen bundles <<EOBUNDLES
+  command-not-found
+  extract
+  git
+  zsh-interactive-cd
+EOBUNDLES
+
+# Load bundles from external repos
+antigen bundles <<EOBUNDLES
+  zsh-users/zsh-completions
+  zsh-users/zsh-autosuggestions
+  zsh-users/zsh-syntax-highlighting
+EOBUNDLES
+
+# Load theme
+antigen theme robbyrussell
+
+# Apply configurations
+antigen apply
