@@ -15,5 +15,9 @@
     ~/.zshrc:
 
 - shell:
-    - [git submodule update --init --recursive, Installing submodules]
-    - [./fzf/install --no-bash --no-fish --key-bindings --completion --no-update-rc, Installing FZF]
+    -
+      description: Initializing submodules
+      command: git submodule update --init --recursive
+    -
+      description: Installing FZF
+      command: ./fzf/install --no-bash --no-fish --key-bindings --completion --no-update-rc
