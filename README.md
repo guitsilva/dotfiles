@@ -1,6 +1,6 @@
 # Dotfiles
 
-My personal dotfiles bootstrapped by [Dotbot](https://github.com/anishathalye/dotbot). Just
+My personal dotfiles. Bootstrapped by [Dotbot](https://github.com/anishathalye/dotbot). Just
 
     $ git clone https://github.com/guitsilva/dotfiles && cd dotfiles && ./install.sh
 
