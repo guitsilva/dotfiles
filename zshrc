@@ -10,7 +10,6 @@ setopt menu_complete
 # Set zsh-autosuggestions options
 bindkey '^[a' autosuggest-accept
 bindkey '^[e' autosuggest-execute
-export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
 
 
 # Load and initialize the completion system
