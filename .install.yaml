@@ -20,5 +20,8 @@
       description: Initializing submodules
       command: git submodule update --init --recursive
     -
+      description: Updating submodules
+      command: git submodule update --remote --recursive    
+    -
       description: Installing FZF
       command: ./fzf/install --no-bash --no-fish --key-bindings --completion --no-update-rc
