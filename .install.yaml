@@ -11,6 +11,7 @@
     ~/.antigenrc:
     ~/.fzf:
     ~/.gitconfig:
+    ~/.gitignore_global:
     ~/.gpg.conf:
     ~/.hidden:
     ~/.zshrc:
