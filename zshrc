@@ -26,3 +26,8 @@ bindkey '^P' fzf-file-widget
 # <Ctrl-H> for fzf history search 
 bindkey -r '^R'
 bindkey '^H' fzf-history-widget
+
+
+# Load and initialize DirEnv
+export DIRENV_LOG_FORMAT=
+eval "$(direnv hook zsh)"
