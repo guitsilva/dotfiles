@@ -4,7 +4,7 @@
       relink: true
       force: true
 
-- clean: ['~', '~/.config', '~/.antigen']
+- clean: ["~", "~/.config", "~/.antigen"]
 
 - link:
     ~/.antigen/antigen: antigen
@@ -17,12 +17,11 @@
     ~/.zshrc:
 
 - shell:
-    -
-      description: Initializing submodules
+    - description: Initializing submodules
       command: git submodule update --init --recursive
-    -
-      description: Updating submodules
-      command: git submodule update --remote --recursive    
-    -
-      description: Installing FZF
+    - description: Updating submodules
+      command: git submodule update --remote --recursive
+    - description: Installing FZF
       command: ./fzf/install --no-bash --no-fish --key-bindings --completion --no-update-rc
+    - description: Installing Starship
+      command: ./starship/install/install.sh --yes --bin-dir ~/.local/bin/

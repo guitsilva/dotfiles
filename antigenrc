@@ -16,8 +16,5 @@ antigen bundles <<EOBUNDLES
   zsh-users/zsh-syntax-highlighting
 EOBUNDLES
 
-# Load theme
-antigen theme robbyrussell
-
 # Apply configurations
 antigen apply

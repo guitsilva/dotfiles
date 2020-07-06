@@ -28,6 +28,10 @@ bindkey -r '^R'
 bindkey '^H' fzf-history-widget
 
 
+# Load and initialize Starship
+eval "$(starship init zsh)"
+
+
 # Load and initialize DirEnv
 export DIRENV_LOG_FORMAT=
 eval "$(direnv hook zsh)"
