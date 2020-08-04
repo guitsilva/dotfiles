@@ -1,3 +1,6 @@
+# Set environment variables
+export NVM_COMPLETION=true
+
 # Load Antigen
 source ~/.antigen/antigen/bin/antigen.zsh
 antigen init ~/.antigenrc
