@@ -11,6 +11,7 @@ EOBUNDLES
 
 # Load bundles from external repos
 antigen bundles <<EOBUNDLES
+  lukechilds/zsh-nvm
   zsh-users/zsh-completions
   zsh-users/zsh-autosuggestions
   zsh-users/zsh-syntax-highlighting
