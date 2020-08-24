@@ -8,3 +8,12 @@
 	gpgsign = true
 [core]
 	excludesfile = ~/.gitignore_global
+	editor = code --reuse-window --wait
+[merge]
+  tool = vscode
+[mergetool "vscode"]
+  cmd = code --reuse-window --wait $MERGED
+[diff]
+  tool = vscode
+[difftool "vscode"]
+  cmd = code --reuse-window --wait --diff $LOCAL $REMOTE
