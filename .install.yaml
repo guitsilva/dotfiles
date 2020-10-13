@@ -14,6 +14,7 @@
     ~/.gitignore_global:
     ~/.gpg.conf:
     ~/.hidden:
+    ~/.config/starship.toml: starship.toml
     ~/.zshrc:
 
 - shell:
