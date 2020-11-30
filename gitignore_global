@@ -1,6 +1,3 @@
-# VS Code
-.vscode/
-
 # Direnv
 .direnv/
 .envrc
