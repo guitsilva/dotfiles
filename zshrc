@@ -22,10 +22,11 @@ autoload -U compinit && compinit
 # Load and initialize fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
-# Use AG
-export FZF_DEFAULT_COMMAND='ag --ignore node_modules -g ""'
-export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
-export FZF_ALT_C_COMMAND='ag --ignore node_modules -g "" | sed -e "s:/[^/]*$::" | uniq'
+# Use ripgrep
+export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob "!{node_modules/*,.git/*}"'
+
+# Reverse history search
+export FZF_CTRL_R_OPTS='--layout=reverse'
 
 # <Ctrl-P> for fzf file search
 bindkey -r '^T'
