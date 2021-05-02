@@ -3,8 +3,6 @@ antigen use oh-my-zsh
 
 # Load bundles from oh-my-zsh
 antigen bundles <<EOBUNDLES
-  command-not-found
-  extract
   git
   node
   docker
