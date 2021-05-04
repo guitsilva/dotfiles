@@ -1,4 +1,6 @@
 # Set environment variables
+export PATH=$PATH:$HOME/.local/bin
+export NVM_AUTO_USE=true
 export NVM_COMPLETION=true
 
 # Load Antigen
@@ -23,7 +25,8 @@ autoload -U compinit && compinit
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Use ripgrep
-export FZF_DEFAULT_COMMAND='rg --files --hidden --follow --glob "!{node_modules/*,.git/*}"'
+export FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!{.git,node_modules}'"
+export FZF_CTRL_T_COMMAND=$FZF_DEFAULT_COMMAND
 
 # Reverse history search
 export FZF_CTRL_R_OPTS='--layout=reverse'
