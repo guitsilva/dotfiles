@@ -4,10 +4,7 @@ antigen use oh-my-zsh
 # Load bundles from oh-my-zsh
 antigen bundles <<EOBUNDLES
   git
-  node
   docker
-  docker-compose
-  zsh-interactive-cd
 EOBUNDLES
 
 # Load bundles from external repos
