@@ -11,10 +11,10 @@
       mode: 0755
 
 - link:
-    ~/.fzf:
     ~/.gpg.conf:
     ~/.gitconfig:
     ~/.gitignore_global:
+    ~/.config/fish: fish
     ~/.config/starship.toml: starship.toml
 
 - shell:
@@ -22,7 +22,5 @@
       command: git submodule update --init --recursive
     - description: Updating submodules
       command: git submodule update --remote --recursive
-    - description: Installing FZF
-      command: ./fzf/install --no-bash --no-zsh --key-bindings --completion --no-update-rc
     - description: Installing Starship
       command: ./starship/install/install.sh --yes --bin-dir ~/.local/bin
