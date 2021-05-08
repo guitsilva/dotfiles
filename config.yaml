@@ -11,11 +11,11 @@
       mode: 0755
 
 - link:
-    ~/.gpg.conf:
-    ~/.gitconfig:
-    ~/.gitignore_global:
-    ~/.config/fish: fish
-    ~/.config/starship.toml: starship.toml
+    ~/.gpg.conf: home/gpg.conf
+    ~/.gitconfig: home/gitconfig
+    ~/.gitignore_global: home/gitignore_global
+    ~/.config/fish: home/config/fish
+    ~/.config/starship.toml: home/config/starship.toml
 
 - shell:
     - description: Initializing submodules
