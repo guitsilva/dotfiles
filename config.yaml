@@ -24,3 +24,5 @@
       command: git submodule update --remote --recursive
     - description: Installing Starship
       command: curl -fsSL https://starship.rs/install.sh | bash -s -- --yes --bin-dir ~/.local/bin
+    - description: Installing Fast Node Manager (FNM)
+      command: curl -fsSL https://fnm.vercel.app/install | bash -s -- --skip-shell
