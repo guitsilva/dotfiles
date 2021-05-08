@@ -23,4 +23,4 @@
     - description: Updating submodules
       command: git submodule update --remote --recursive
     - description: Installing Starship
-      command: ./starship/install/install.sh --yes --bin-dir ~/.local/bin
+      command: curl -fsSL https://starship.rs/install.sh | bash -s -- --yes --bin-dir ~/.local/bin
