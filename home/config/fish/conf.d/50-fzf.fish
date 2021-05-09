@@ -1,6 +1,8 @@
 # Commands
-set -gx FZF_DEFAULT_COMMAND "rg --files --hidden --glob '!{.git,node_modules}'"
+set -gx FZF_DEFAULT_COMMAND "fd --type file --hidden --exclude '{node_modules,.git,.vscode,.fnm,.cache,.icons,.themes,.var}'"
 set -gx FZF_CTRL_T_COMMAND $FZF_DEFAULT_COMMAND
+
+set -gx FZF_ALT_C_COMMAND "fd --type directory --hidden --exclude '{node_modules,.git,.vscode,.fnm,.cache,.icons,.themes,.var}'"
 
 # Options
 set -gx FZF_CTRL_R_OPTS "--layout=reverse"
