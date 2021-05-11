@@ -1,5 +1,5 @@
-# Add FNM to PATH
+# Add to PATH
 fish_add_path ~/.fnm
 
-# Initialize FNM
+# Initialize
 fnm env | source

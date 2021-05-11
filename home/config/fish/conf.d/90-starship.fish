@@ -1,2 +1,2 @@
-# Initialize Starship
+# Initialize
 starship init fish | source
