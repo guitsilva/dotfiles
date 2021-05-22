@@ -11,6 +11,7 @@
       mode: 0755
 
 - link:
+    ~/.czrc: home/czrc
     ~/.gpg.conf: home/gpg.conf
     ~/.gitconfig: home/gitconfig
     ~/.gitignore_global: home/gitignore_global
