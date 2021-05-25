@@ -14,7 +14,7 @@
     ~/.czrc: home/czrc
     ~/.gpg.conf: home/gpg.conf
     ~/.gitconfig: home/gitconfig
-    ~/.gitignore_global: home/gitignore_global
+    ~/.fzfignore: home/fzfignore
     ~/.config/fish: home/config/fish
     ~/.config/starship.toml: home/config/starship.toml
 
