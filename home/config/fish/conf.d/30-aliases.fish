@@ -1,7 +1,7 @@
 # exa
 if type -q exa
     alias ls="exa"
-    alias ll="exa --long"
-    alias la="exa --long --all"
-    alias lt="exa --tree"
+    alias ll="exa --git --long"
+    alias la="exa --git --long --all"
+    alias lt="exa --git --tree"
 end

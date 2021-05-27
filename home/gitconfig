@@ -6,8 +6,11 @@
 	ui = true
 [commit]
 	gpgsign = true
+[pull]
+	rebase = true
+[rebase]
+	autosquash = true
 [core]
-	excludesfile = ~/.gitignore_global
 	editor = code --reuse-window --wait
 [merge]
 	tool = vscode
@@ -17,3 +20,15 @@
 	tool = vscode
 [difftool "vscode"]
 	cmd = code --reuse-window --wait --diff $LOCAL $REMOTE
+[alias]
+	ll = log --oneline -n30
+	lt = ll --graph --decorate
+	st = status --short
+	up = pull --rebase --prune
+	pf = push --force-with-lease
+	sw = "!git branch --list | fzf | xargs -o git switch"
+	fx = "!git log --oneline -n30 --no-merges | fzf --height=100% --preview 'git show --color=always --compact-summary {+1}' | cut -c -7 | xargs -o git commit --fixup"
+	df = "!git diff --name-only | fzf --height=100% --preview 'git diff --color=always {+1} | tail -n +6'"
+	rs = "!git diff --name-only | fzf --height=100% --multi --preview 'bat --color=always {+1}' | xargs -o git restore"
+	ad = "!git diff --name-only | fzf --height=100% --multi --preview 'bat --color=always {+1}' | xargs -o git add"
+	rss = "!git diff --name-only --cached | fzf --height=100% --multi --preview 'bat --color=always {+1}' | xargs -o git restore --staged"
