@@ -8,6 +8,5 @@ end
 
 # Bat style
 if type -q bat
-    set -gx BAT_THEME GitHub
     set -gx BAT_STYLE "changes,numbers,snip"
 end

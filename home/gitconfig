@@ -10,6 +10,7 @@
 	rebase = true
 [rebase]
 	autosquash = true
+	autostash = true
 [core]
 	editor = code --reuse-window --wait
 [merge]

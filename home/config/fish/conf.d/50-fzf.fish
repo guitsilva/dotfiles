@@ -15,7 +15,7 @@ if type -q fzf
     set -gx FZF_ALT_C_COMMAND "fd --type=directory --hidden --ignore-file=$HOME/.fzfignore --search-path=$HOME"
 
     # Options
-    set -gx FZF_DEFAULT_OPTS "--color=light --layout=reverse --height 50%"
+    set -gx FZF_DEFAULT_OPTS "--no-color --layout=reverse --height 50%"
     set -gx FZF_CTRL_R_OPTS $FZF_DEFAULT_OPTS
     set -gx FZF_ALT_C_OPTS $FZF_DEFAULT_OPTS
 end
