@@ -7,7 +7,7 @@
 [commit]
 	gpgsign = true
 [pull]
-	rebase = true
+	rebase = false
 [rebase]
 	autosquash = true
 	autostash = true
@@ -21,3 +21,5 @@
 	tool = vscode
 [difftool "vscode"]
 	cmd = code --reuse-window --wait --diff $LOCAL $REMOTE
+[init]
+	defaultBranch = main

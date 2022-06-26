@@ -26,9 +26,3 @@
       command: curl -fsSL https://starship.rs/install.sh | sh -s -- --yes --bin-dir ~/.local/bin
     - description: Installing Fast Node Manager (FNM)
       command: curl -fsSL https://fnm.vercel.app/install | sh -s -- --skip-shell
-    - description: Installing Rustup
-      command: curl -fsSL https://sh.rustup.rs | sh -s -- -y --no-modify-path
-    - description: Installing PyEnv
-      command: curl https://pyenv.run | sh -s
-    - description: Installing Poetry
-      command: curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/get-poetry.py | python - --yes
